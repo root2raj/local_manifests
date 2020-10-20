@@ -3,11 +3,19 @@
   <!--Device tree-->
   <project name="root2raj/device_samsung_hero2lte" path="device/samsung/hero2lte" remote="github" revision="aicp"/>
   <project name="root2raj/device_samsung_herolte" path="device/samsung/herolte" remote="github" revision="aicp"/>
-  <project name="root2raj/device_samsung_hero-common" path="device/samsung/hero-common" remote="github" revision="ten"/>
+  <project name="root2raj/device_samsung_universal8890-common" path="device/samsung/universal8890-common" remote="github" revision="ten"/>
   <!--Hardware-->
-  <project name="root2raj/hardware_samsung" path="hardware/samsung" remote="github"/>
+  <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" revision="lineage-17.1"/>
   <!--Kernel-->
-  <project name="ivanmeler/android_kernel_samsung_universal8890" path="kernel/samsung/universal8890" remote="github" revision="lineage-17.0"/>
+  <project name="8890q/android_kernel_samsung_universal8890" path="kernel/samsung/universal8890" remote="github" revision="lineage-17.1"/>
   <!--Blobs-->
   <project name="8890q/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="lineage-17.1"/>
+  <!--Remove AICP-->
+  <remove-project name="AICP/frameworks_base"/>
+  <remove-project name="AICP/packages_apps_Settings"/>
+  <remove-project name="AICP/vendor_aicp"/>
+  <!--AICP Fork-->
+  <project name="root2raj/frameworks_base" path="frameworks/base" remote="github" revision="q10.0"/>
+  <project name="root2raj/packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="q10.0"/>
+  <project name="root2raj/vendor_aicp" path="vendor/aicp" remote="github" revision="q10.0"/>
 </manifest>
